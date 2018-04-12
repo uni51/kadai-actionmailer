@@ -68,3 +68,6 @@ gem 'rails-i18n'
 # 追記 画像アップロード用ファイル
 gem 'carrierwave'
 gem 'mini_magick'
+# 追記S3に画像を保存する用のgem
+gem 'fog'
+gem 'dotenv-rails'
