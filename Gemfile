@@ -46,6 +46,12 @@ group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  gem 'capistrano', '3.6.0' # capistranoのツール一式
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
@@ -70,4 +76,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 # 追記S3に画像を保存する用のgem
 gem 'fog'
-gem 'dotenv-rails'
+gem 'dotenv-rails' # 環境変数を操作するのに必要
+gem 'unicorn' # アプリケーションサーバのunicorn
+gem 'therubyracer', platforms: :ruby # デプロイ時に必要
